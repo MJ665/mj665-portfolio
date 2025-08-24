@@ -185,34 +185,34 @@ const config: Config = {
 
 
   
-    algolia: {
-      apiKey: process.env.ALGOLIA_API_KEY as string,
-      appId: process.env.ALGOLIA_APP_ID as string,
-      indexName: process.env.ALGOLIA_INDEX_NAME as string,
-      searchParameters: {
-        facetFilters: ['language:en', 'version:v1'],
-      },
+    // algolia: {
+    //   apiKey: process.env.ALGOLIA_API_KEY as string,
+    //   appId: process.env.ALGOLIA_APP_ID as string,
+    //   indexName: process.env.ALGOLIA_INDEX_NAME as string,
+    //   searchParameters: {
+    //     facetFilters: ['language:en', 'version:v1'],
+    //   },
 
-      // Optional parameters
-      contextualSearch: true,  // Enables contextual search for language/version
-      externalUrlRegex: 'external\\.com|domain\\.com',  // URLs where window.location is used instead of history.push
+    //   // Optional parameters
+    //   contextualSearch: true,  // Enables contextual search for language/version
+    //   externalUrlRegex: 'external\\.com|domain\\.com',  // URLs where window.location is used instead of history.push
       
-      // Replace search result pathnames for multi-deployment or different base URLs
-      replaceSearchResultPathname: {
-        from: '/docs/',  // Modify as per your needs
-        to: '/',
-      },
+    //   // Replace search result pathnames for multi-deployment or different base URLs
+    //   replaceSearchResultPathname: {
+    //     from: '/docs/',  // Modify as per your needs
+    //     to: '/',
+    //   },
       
   
       
-      // Optional: Path for search page (enabled by default)
-      searchPagePath: 'search',  // Set to false to disable the search page
+    //   // Optional: Path for search page (enabled by default)
+    //   searchPagePath: 'search',  // Set to false to disable the search page
 
-      // Optional: Enable insights feature for DocSearch (disabled by default)
-      insights: false,  // Set to true to enable
+    //   // Optional: Enable insights feature for DocSearch (disabled by default)
+    //   insights: false,  // Set to true to enable
       
 
-    },
+    // },
      /**
       * * Highlight: added default color mode as dark
     **/

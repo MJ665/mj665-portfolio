@@ -39,7 +39,7 @@ export default [
   },
   {
     path: '/achievements',
-    component: ComponentCreator('/achievements', '140'),
+    component: ComponentCreator('/achievements', '040'),
     exact: true
   },
   {
@@ -190,11 +190,6 @@ export default [
   {
     path: '/markdown-page',
     component: ComponentCreator('/markdown-page', '3d7'),
-    exact: true
-  },
-  {
-    path: '/search',
-    component: ComponentCreator('/search', '5de'),
     exact: true
   },
   {

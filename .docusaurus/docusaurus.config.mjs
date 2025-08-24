@@ -24,9 +24,9 @@ export default {
   },
   "customFields": {
     "REACT_APP_GOOGLE_SCRIPT_URL": "https://script.google.com/macros/s/AKfycbxYJ8CUS_TUPrLVrSa5n2MeU8IE6YxrG7P68B6a3haOreFctqjywJBZ6osuIoTebaVo/exec",
-    "appId": "8AW2X3OM76",
-    "apiKey": "f73a216d676c99572550d329f14af89c",
-    "indexName": "mj665io"
+    "appId": "5GSCCZP0Y0",
+    "apiKey": "c7690dfaa7ac3a93c7c413c106bce8ae",
+    "indexName": "mj665"
   },
   "presets": [
     [
@@ -37,7 +37,7 @@ export default {
           "priority": 0.5
         },
         "docs": {
-          "sidebarPath": "/Users/meet/Desktop/~Coding/~Coding_Janauary2023_till_/uncomplete project/mj665.github.io/sidebars.ts",
+          "sidebarPath": "/Users/meet/Desktop/~Coding/mj665-portfolio/sidebars.ts",
           "remarkPlugins": [
             null
           ],
@@ -139,25 +139,6 @@ export default {
   ],
   "themeConfig": {
     "image": "img/Myproject.png",
-    "algolia": {
-      "apiKey": "f73a216d676c99572550d329f14af89c",
-      "appId": "8AW2X3OM76",
-      "indexName": "mj665io",
-      "searchParameters": {
-        "facetFilters": [
-          "language:en",
-          "version:v1"
-        ]
-      },
-      "contextualSearch": true,
-      "externalUrlRegex": "external\\.com|domain\\.com",
-      "replaceSearchResultPathname": {
-        "from": "/docs/",
-        "to": "/"
-      },
-      "searchPagePath": "search",
-      "insights": false
-    },
     "colorMode": {
       "defaultMode": "dark",
       "disableSwitch": false,
@@ -297,7 +278,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2024 Meet Jain Portfolio, Built with Docusaurus."
+      "copyright": "Copyright © 2025 Meet Jain Portfolio, Built with Docusaurus."
     },
     "prism": {
       "theme": {
@@ -516,6 +497,20 @@ export default {
   },
   "baseUrlIssueBanner": true,
   "future": {
+    "v4": {
+      "removeLegacyPostBuildHeadAttribute": false,
+      "useCssCascadeLayers": false
+    },
+    "experimental_faster": {
+      "swcJsLoader": false,
+      "swcJsMinimizer": false,
+      "swcHtmlMinimizer": false,
+      "lightningCssMinimizer": false,
+      "mdxCrossCompilerCache": false,
+      "rspackBundler": false,
+      "rspackPersistentCache": false,
+      "ssgWorkerThreads": false
+    },
     "experimental_storage": {
       "type": "localStorage",
       "namespace": false

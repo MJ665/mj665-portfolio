@@ -42,7 +42,7 @@
       "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/achievements-140": {
+  "/achievements-040": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
       "plugin": "plugin---achievements-753-6bd"
@@ -56,13 +56,13 @@
         "content": "content---achievementsc-85-ed2"
       },
       {
-        "content": "content---achievements-89-f-bb0"
-      },
-      {
         "content": "content---achievements-0-e-7-ec3"
       },
       {
         "content": "content---achievements-702-ce3"
+      },
+      {
+        "content": "content---achievements-89-f-bb0"
       },
       {
         "content": "content---achievements-7-b-0-ed7"
@@ -399,12 +399,6 @@
       "plugin": "plugin---markdown-pagea-74-7b5"
     },
     "content": "content---markdown-page-393-028"
-  },
-  "/search-5de": {
-    "__comp": "__comp---theme-search-page-1-a-4-d6f",
-    "__context": {
-      "plugin": "plugin---searchc-14-0ea"
-    }
   },
   "/docs-bd9": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
