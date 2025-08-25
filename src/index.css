@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Portfolio Design System for Meet Jain */
+
+@layer base {
+  :root {
+    /* Light Mode - Enhanced Blue & White Theme */
+    --background: 0 0% 100%;
+    --foreground: 215 30% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 30% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 30% 20%;
+
+    /* Enhanced blue primary palette */
+    --primary: 220 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 220 100% 50%;
+
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 215 30% 20%;
+
+    --muted: 220 15% 96%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 220 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 220 100% 60%;
+
+    --radius: 0.75rem;
+
+    /* Enhanced Portfolio Colors */
+    --hero-gradient: linear-gradient(135deg, hsl(220, 92%, 49%) 0%, hsl(220 100% 70%) 100%);
+    --card-gradient: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 15% 98%) 100%);
+    --text-gradient: linear-gradient(135deg, hsl(220, 76%, 50%) 0%, hsl(220 100% 45%) 100%);
+    
+    /* Enhanced Shadows */
+    --shadow-sm: 0 2px 8px hsl(220 100% 60% / 0.08);
+    --shadow-md: 0 8px 24px hsl(220 100% 60% / 0.12);
+    --shadow-lg: 0 16px 40px hsl(220 100% 60% / 0.15);
+    --shadow-glow: 0 0 40px hsl(220 100% 60% / 0.25);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 220 100% 60%;
+  }
+
+  .dark {
+    /* Dark Mode - Enhanced Black & Gold Theme */
+    --background: 0 0% 4%;
+    --foreground: 48 100% 88%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 48 100% 88%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 48 100% 88%;
+
+    /* Enhanced gold primary palette */
+    --primary: 48 100% 70%;
+    --primary-foreground: 0 0% 4%;
+    --primary-hover: 48 100% 60%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 48 100% 88%;
+
+    --muted: 0 0% 8%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 48 100% 70%;
+    --accent-foreground: 0 0% 4%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 48 100% 70%;
+
+    /* Enhanced Portfolio Colors for Dark Mode */
+    --hero-gradient: linear-gradient(135deg, hsl(48, 81%, 58%) 0%, hsl(48, 93%, 67%) 100%);
+    --card-gradient: linear-gradient(145deg, hsl(0 0% 6%) 0%, hsl(0 0% 10%) 100%);
+    --text-gradient: linear-gradient(135deg, hsl(48, 73%, 49%) 0%, hsl(48 100% 55%) 100%);
+    
+    /* Enhanced Shadows for Dark Mode */
+    --shadow-sm: 0 2px 8px hsla(49, 80%, 58%, 0.978);
+    --shadow-md: 0 8px 24px hsl(48, 78%, 65%);
+    --shadow-lg: 0 16px 40px hsl(48, 84%, 55%);
+    --shadow-glow: 0 0 40px hsla(51, 70%, 56%, 0.962);
+
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 48 100% 88%;
+    --sidebar-primary: 48 100% 70%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 48 100% 88%;
+    --sidebar-border: 0 0% 12%;
+    --sidebar-ring: 48 100% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero gradient text */
+  .hero-text {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Card with custom gradient */
+  .portfolio-card {
+    background: var(--card-gradient);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+  }
+
+  .portfolio-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+
+  /* Custom button variants */
+  .btn-hero {
+    background: var(--hero-gradient);
+    color: hsl(var(--primary-foreground));
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+  }
+
+  .btn-hero:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-1px);
+  }
+
+  /* Section fade-in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  /* Stagger animation delays */
+  .delay-100 { animation-delay: 0.1s; }
+  .delay-200 { animation-delay: 0.2s; }
+  .delay-300 { animation-delay: 0.3s; }
+  .delay-400 { animation-delay: 0.4s; }
+}
